@@ -1,0 +1,10 @@
+{
+  "title": "FancyInnovations",
+  "description": "",
+  "root": true,
+  "pages": [
+    "minecraft-plugins",
+    "hytale-plugins",
+    "fancyanalytics"
+  ]
+}
