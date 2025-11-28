@@ -6,7 +6,7 @@ export default function HomePage() {
         <h1 className="text-8xl font-bold mb-4 text-fd-primary">FancyInnovations</h1>
         <p className="text-2xl mb-32">Innovative Plugins for Minecraft and Hytale</p>
 
-        <div className="w-1/2 max-w-1/2 mx-auto">
+        <div className="w-2/5 max-w-1/2 mx-auto">
             <Cards className="px-8">
                 <Card
                     title="Minecraft Plugins"
@@ -15,7 +15,7 @@ export default function HomePage() {
                 />
                 <Card
                     title="Hytale Plugins"
-                    description="Discover our first Hytale plugins, including FancyCore."
+                    description="Discover our first Hytale plugins, including FancyCore and more to come."
                     href="/docs/hytale-plugins"
                 />
             </Cards>
