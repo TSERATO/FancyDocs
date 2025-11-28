@@ -19,6 +19,8 @@ The markdown files are located in the `content/docs/` directory. You can edit th
 
 Things to consider when migrating from the old docs to the new docs:
 - Change file extensions from `.md` to `.mdx`
-- Remove first heading and put title in the [frontmatter](https://fumadocs.dev/docs/ui/page-conventions#file)
+- Update frontmatter [frontmatter](https://fumadocs.dev/docs/ui/page-conventions#file)
+  - Add title
+  - Add description
 - Change link of every image from `../static/{path}` to `/{path}`
 - Replace callouts with `!!!` syntax to the [new syntax](https://fumadocs.dev/docs/ui/markdown#callouts)
