@@ -10,17 +10,17 @@ export default function Layout({ children }: LayoutProps<'/docs'>) {
             tabs: [
                 {
                     title: 'Minecraft Plugins',
-                    description: 'Resources for our Minecraft (paper) plugins.',
+                    description: 'Docs for our Minecraft (paper) plugins.',
                     url: '/docs/minecraft-plugins',
                 },
                 {
                     title: 'Hytale Plugins',
-                    description: 'Resources for our server side Hytale plugins.',
+                    description: 'Docs for our server side Hytale plugins.',
                     url: '/docs/hytale-plugins',
                 },
                 {
                     title: 'FancyAnalytics',
-                    description: 'Resources for our analytics platform FancyAnalytics.',
+                    description: 'Docs for our analytics platform FancyAnalytics.',
                     url: '/docs/fancyanalytics',
                 },
             ],
