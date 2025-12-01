@@ -3,9 +3,11 @@
 @import 'fumadocs-ui/css/preset.css';
 
 @theme {
-    --color-fd-primary: hsl(46, 85%, 54%);
+    --color-fd-primary: hsl(57, 100%, 42%);
+    --color-primary-foreground: hsl(0, 0%, 5%);
 }
 
 .dark {
-    --color-fd-primary: hsl(46, 85%, 54%);
+    --color-fd-primary: hsl(57, 100%, 42%);
+    --color-primary-foreground: hsl(0, 0%, 5%);
 }
