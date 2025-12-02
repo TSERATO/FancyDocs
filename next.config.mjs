@@ -19,6 +19,18 @@ const config = {
         protocol: 'https',
         hostname: 'raw.githubusercontent.com',
       },
+      {
+          protocol: "https",
+          hostname: "fancyinnovations.com",
+      },
+      {
+          protocol: "https",
+          hostname: "docs.fancyinnovations.com",
+      },
+      {
+          protocol: "https",
+          hostname: "newdocs.fancyinnovations.com",
+      }
     ],
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
