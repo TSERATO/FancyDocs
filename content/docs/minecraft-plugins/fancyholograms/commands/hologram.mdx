@@ -7,47 +7,47 @@ description: Usage of /hologram
 
 ### help
 
-Description: Shows a list of all subcommands\
-Syntax: `/Hologram help`\
-Permission: `FancyHolograms.admin`
+Shows a list of all subcommands.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram help`
 
 ### list
 
-Description: Shows a list of all holograms\
-Syntax: `/Hologram list`\
-Permission: `FancyHolograms.admin`
+Shows a list of all holograms.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram list`
 
 ### nearby
 
-Description: Shows all holograms nearby you in a range\
-Syntax: `/Hologram nearby <range>`\
-Permission: `FancyHolograms.admin`
+Shows all holograms nearby you in a range.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram nearby <range>`
 
 ### create
 
-Description: Creates a new hologram at your location\
-Syntax: `/Hologram create (type) (name)`\
-Permission: `FancyHolograms.admin`
+Creates a new hologram at your location.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram create (type) (name)`
 
 <AutoTypeTable path="./params/hologram/hologram-create.ts" />
 
 ### remove
 
-Description: Removes a certain hologram\
-Syntax: `/Hologram remove (hologram)`\
-Permission: `FancyHolograms.admin`
+Removes a certain hologram.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram remove (hologram)`
 
 ### copy
 
-Description: Creates a copy of a hologram\
-Syntax: `/Hologram copy (hologram) (new name)`\
-Permission: `FancyHolograms.admin`
+Creates a copy of a hologram.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram copy (hologram) (new name)`
 
 ### info
 
-Description: Shows you all information about the hologram\
-Syntax: `/Hologram info (hologram)`\
-Permission: `FancyHolograms.admin`
+Shows you all information about the hologram.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram info (hologram)`
 
 ## General hologram modification
 
@@ -55,91 +55,89 @@ These commands can be run for any hologram type (text, item and block).
 
 ### moveHere
 
-Description: Teleports the hologram to you\
-Syntax: `/Hologram edit (hologram) moveHere`\
-Alias: `/Hologram edit (hologram) position`\
-Permission: `FancyHolograms.admin`
+Teleports the hologram to you (*note: Alias: `/hologram edit (hologram) position`*).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) movehere`
 
 ### moveTo
 
-Description: Teleports the hologram to the location\
-Syntax: `/Hologram edit (hologram) moveTo (x) (y) (z) [yaw] [pitch]`\
-Permission: `FancyHolograms.admin`
+Teleports the hologram to the location.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) moveto (x) (y) (z) [yaw] [pitch]`
 
 <AutoTypeTable path="./params/hologram/hologram-moveTo.ts" />
 
 ### rotate
 
-Description: Rotates the hologram around the y-axis\
-Syntax: `/Hologram edit (hologram) rotate (degrees)`\
-Permission: `FancyHolograms.admin`
+Rotates the hologram around the y-axis.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) rotate (degrees)`
 
 ### rotatepitch
 
-Description: Rotates the hologram around the x-axis\
-Syntax: `/Hologram edit (hologram) rotatepitch (degrees)`\
-Permission: `FancyHolograms.admin`
+Rotates the hologram around the x-axis.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) rotatepitch (degrees)`
 
 ### translate
 
-Description: Translates the hologram by a certain amount in the x, y and z direction\
-Syntax: `/Hologram edit (hologram) translate (x) (y) (z)`\
-Permission: `FancyHolograms.admin`
+Translates the hologram by a certain amount in the x, y and z direction.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) translate (x) (y) (z)`
 
 <AutoTypeTable path="./params/hologram/hologram-translate.ts" />
 
 ### visibilityDistance
 
-Description: Sets from how far away players can see the hologram (-1 for default distance)\
-Syntax: `/Hologram edit (hologram) visibilityDistance (distance)`\
-Permission: `FancyHolograms.admin`
+Sets from how far away players can see the hologram (*note: -1 for default distance*).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) visibilitydistance (distance)`
 
 ### visibility
 
-Description: Sets how the visibility should be controlled\
-Syntax: `/Hologram edit (hologram) visibility (ALL | MANUAL | PERMISSION_NEEDED)`\
-Permission: `FancyHolograms.admin`\
-Permission to view a hologram: `FancyHolograms.viewhologram.<name>`
+Sets how the visibility should be controlled (*note: Permission to view a hologram: `fancyholograms.viewhologram.<name>`*).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) visibility (all | manual | permission_needed)`
 
 <AutoTypeTable path="./params/hologram/hologram-visibility.ts" />
 
 ### scale
 
-Description: Sets the scale (can be floats)\
-Syntax: `/Hologram edit (hologram) scale (factor)`\
-Permission: `FancyHolograms.admin`
+Sets the scale (can be floats).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) scale (factor)`
 
 ### billboard
 
-Description: Sets the billboard\
-Syntax: `/Hologram edit (hologram) billboard (center | fixed | vertical | horizontal)`\
-Permission: `FancyHolograms.admin`
+Sets the billboard.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) billboard (center | fixed | vertical | horizontal)`
 
 <AutoTypeTable path="./params/hologram/hologram-billboard.ts" />
 
 ### shadowStrength
 
-Description: Sets the shadow strength\
-Syntax: `/Hologram edit (hologram) shadowStrength (strength)`\
-Permission: `FancyHolograms.admin`
+Sets the shadow strength.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) shadowstrength (strength)`
 
 ### shadowRadius
 
-Description: Sets the shadow radius\
-Syntax: `/Hologram edit (hologram) shadowRadius (radius)`\
-Permission: `FancyHolograms.admin`
+Sets the shadow radius.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) shadowradius (radius)`
 
 ### linkWithNpc
 
-Description: Links a hologram with an NPC (requires FancyNpcs)\
-Syntax: `/Hologram edit (hologram) linkWithNpc (npc)`\
-Permission: `FancyHolograms.admin`
+Links a hologram with an NPC (*note: requires FancyNpcs*).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) linkwithnpc (npc)`
 
 ### unlinkWithNpc
 
-Description: Unlinks the hologram from the NPC\
-Syntax: `/Hologram edit (hologram) unlinkWithNpc`\
-Permission: `FancyHolograms.admin`
+Unlinks the hologram from the NPC.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) unlinkwithnpc`
 
 ## Text hologram modification
 
@@ -147,72 +145,69 @@ These commands can be run for all **text** holograms.
 
 ### setLine
 
-Description: Sets the content of the line\
-Syntax: `/Hologram edit (hologram) setLine (line) (text...)`\
-Permission: `FancyHolograms.admin`
+Sets the content of the line.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) setline (line) (text...)`
 
 ### addLine
 
-Description: Adds a line at the bottom\
-Syntax: `/Hologram edit (hologram) addLine (text...)`\
-Permission: `FancyHolograms.admin`
+Adds a line at the bottom.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) addline (text...)`
 
 ### removeLine
 
-Description: Removes a line\
-Syntax: `/Hologram edit (hologram) removeLine (line)`\
-Permission: `FancyHolograms.admin`
+Removes a line.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) removeline (line)`
 
 ### insertBefore
 
-Description: Adds a line after another\
-Syntax: `/Hologram edit (hologram) insertBefore (line) (text...)`\
-Permission: `FancyHolograms.admin`
+Adds a line before another.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) insertbefore (line) (text...)`
 
 ### insertAfter
 
-Description: Adds a line before another\
-Syntax: `/Hologram edit (hologram) insertAfter (line) (text...)`\
-Permission: `FancyHolograms.admin`
+Adds a line after another.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) insertafter (line) (text...)`
 
 ### updateTextInterval
 
-Description: Sets the interval for refreshing the text (useful for placeholders)\
-Syntax: `/Hologram edit (hologram) updateTextInterval (ticks | seconds | minutes)`\
-Example ticks: `/Hologram edit (hologram) updateTextInterval 15`\
-Example seconds: `/Hologram edit (hologram) updateTextInterval 5s`\
-Example minutes: `/Hologram edit (hologram) updateTextInterval 5m`\
-Permission: `FancyHolograms.admin`
+Sets the interval for refreshing the text (*note: useful for placeholders. Example ticks: `15`, example seconds: `5s`, example minutes: `5m`*).
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) updatetextinterval (ticks | seconds | minutes)`
 
 <AutoTypeTable path="./params/hologram/hologram-updateTextInterval.ts" />
 
 ### background
 
-Description: Sets the background color\
-Syntax: `/Hologram edit (hologram) background (color)`\
-Permission: `FancyHolograms.admin`
+Sets the background color.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) background (color)`
 
 <AutoTypeTable path="./params/hologram/hologram-background.ts" />
 
 ### textShadow
 
-Description: Enables/disables the text shadow\
-Syntax: `/Hologram edit (hologram) textShadow (true|false)`\
-Permission: `FancyHolograms.admin`
+Enables/disables the text shadow.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) textshadow (true|false)`
 
 ### brightness
 
-Description: Changes the brightness of the hologram\
-Syntax: `/hologram edit <hologram> brightness (block | sky) (0-15)`\
-Permission: `FancyHolograms.admin`
+Changes the brightness of the hologram.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) brightness (block | sky) (0-15)`
 
 <AutoTypeTable path="./params/hologram/hologram-brightness.ts" />
 
 ### textAlignment
 
-Description: Sets the alignment of the text\
-Syntax: `/Hologram edit (hologram) textAlignment (center | left | right)`\
-Permission: `FancyHolograms.admin`
+Sets the alignment of the text.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) textalignment (center | left | right)`
 
 <AutoTypeTable path="./params/hologram/hologram-textAlignment.ts" />
 
@@ -222,9 +217,9 @@ These commands can be run for all **item** holograms.
 
 ### item
 
-Description: Sets the hologram item you are holding in your main hand\
-Syntax: `/Hologram edit (hologram) item`\
-Permission: `FancyHolograms.admin`
+Sets the hologram item you are holding in your main hand.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) item`
 
 ## Block hologram modification
 
@@ -232,6 +227,6 @@ These commands can be run for all **block** holograms.
 
 ### block
 
-Description: Sets the hologram block\
-Syntax: `/Hologram edit (hologram) block (block type)`\
-Permission: `FancyHolograms.admin`
+Sets the hologram block.
+- **Permissions**: `fancyholograms.admin`
+- **Syntax**: `/hologram edit (hologram) block (block type)`
