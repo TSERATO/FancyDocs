@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
+    "generate-docs": "node scripts/generate-docs.mjs",
+    "build": "npm run generate-docs && next build",
+    "dev": "npm run generate-docs && next dev",
     "start": "next start",
     "types:check": "fumadocs-mdx && tsc --noEmit",
     "lint": "eslint"
