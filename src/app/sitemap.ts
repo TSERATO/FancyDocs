@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { source } from '@/lib/source';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://newdocs.fancyinnovations.com';
+    const baseUrl = 'https://fancyinnovations.com';
 
     const pages = await source.getPages();
 
