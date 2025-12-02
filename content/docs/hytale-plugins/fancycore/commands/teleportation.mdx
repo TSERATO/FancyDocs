@@ -14,148 +14,130 @@ description: Teleportation options for FancyCore
 
 ### tp
 
-Description: Teleports you or the specified player to another player's location.
-Syntax: ``/tp <target> [destination]`` or ``/teleport <target> [destination]``
-- `<target>` - Player to teleport
-- `[destination]` - Destination player (optional)
-
-Permission: ``fancycore.commands.tp``
+Teleports you or the specified player to another player's location.
+- **Permissions**: `fancycore.commands.tp`
+- **Syntax**: `/tp <target> [destination]` or `/teleport <target> [destination]`
+  - `<target>` - Player to teleport
+  - `[destination]` - Destination player (optional)
 
 ### tphere
 
-Description: Teleports the specified player to your location.
-Syntax: ``/tphere <player>`` or ``/teleporthere <player>``
-- `<player>` - Target player
-
-Permission: ``fancycore.commands.tphere``
+Teleports the specified player to your location.
+- **Permissions**: `fancycore.commands.tphere`
+- **Syntax**: `/tphere <player>` or `/teleporthere <player>`
+  - `<player>` - Target player
 
 ### tpall
 
-Description: Teleports all players on the server to your location.
-Syntax: ``/tpall`` or ``/teleportall``
-
-Permission: ``fancycore.commands.tpall``
+Teleports all players on the server to your location.
+- **Permissions**: `fancycore.commands.tpall`
+- **Syntax**: `/tpall` or `/teleportall`
 
 ### tppos
 
-Description: Teleports you to the specified coordinates.
-Syntax: ``/tppos <x> <y> <z> [world]`` or ``/teleportpos <x> <y> <z> [world]``
-- `<x>` - X coordinate
-- `<y>` - Y coordinate
-- `<z>` - Z coordinate
-- `[world]` - World name (optional)
-
-Permission: ``fancycore.commands.tppos``
+Teleports you to the specified coordinates.
+- **Permissions**: `fancycore.commands.tppos`
+- **Syntax**: `/tppos <x> <y> <z> [world]` or `/teleportpos <x> <y> <z> [world]`
+  - `<x>` - X coordinate
+  - `<y>` - Y coordinate
+  - `<z>` - Z coordinate
+  - `[world]` - World name (optional)
 
 ### tprequest
 
-Description: Sends a teleport request to another player to teleport to their location.
-Syntax: ``/tprequest <player>`` or ``/tpr <player>`` or ``/teleportrequest <player>``
-- `<player>` - Target player
-
-Permission: ``fancycore.commands.tprequest``
+Sends a teleport request to another player to teleport to their location.
+- **Permissions**: `fancycore.commands.tprequest`
+- **Syntax**: `/tprequest <player>` or `/tpr <player>` or `/teleportrequest <player>`
+  - `<player>` - Target player
 
 ### tpaccept
 
-Description: Accepts a pending teleport request from another player.
-Syntax: ``/tpaccept [player]`` or ``/tpa [player]`` or ``/teleportaccept [player]``
-- `[player]` - Requesting player (optional)
-
-Permission: ``fancycore.commands.tpaccept``
+Accepts a pending teleport request from another player.
+- **Permissions**: `fancycore.commands.tpaccept`
+- **Syntax**: `/tpaccept [player]` or `/tpa [player]` or `/teleportaccept [player]`
+  - `[player]` - Requesting player (optional)
 
 ### tpdeny
 
-Description: Denies a pending teleport request from another player.
-Syntax: ``/tpdeny [player]`` or ``/tpd [player]`` or ``/teleportdeny [player]``
-- `[player]` - Requesting player (optional)
-
-Permission: ``fancycore.commands.tpdeny``
+Denies a pending teleport request from another player.
+- **Permissions**: `fancycore.commands.tpdeny`
+- **Syntax**: `/tpdeny [player]` or `/tpd [player]` or `/teleportdeny [player]`
+  - `[player]` - Requesting player (optional)
 
 ### back
 
-Description: Teleports you back to your previous location before your last teleport.
-Syntax: ``/back``
-
-Permission: ``fancycore.commands.back``
+Teleports you back to your previous location before your last teleport.
+- **Permissions**: `fancycore.commands.back`
+- **Syntax**: `/back`
 
 ### deathback
 
-Description: Teleports you to the location where you last died.
-Syntax: ``/deathback`` or ``/deathtp`` or ``/deathteleport``
-
-Permission: ``fancycore.commands.deathback``
+Teleports you to the location where you last died.
+- **Permissions**: `fancycore.commands.deathback`
+- **Syntax**: `/deathback` or `/deathtp` or `/deathteleport`
 
 ## Spawn
 
 ### setspawn
 
-Description: Sets the server's spawn point to your current location.
-Syntax: ``/setspawn``
-
-Permission: ``fancycore.commands.setspawn``
+Sets the server's spawn point to your current location.
+- **Permissions**: `fancycore.commands.setspawn`
+- **Syntax**: `/setspawn`
 
 ### spawn
 
-Description: Teleports you to the server's spawn point.
-Syntax: ``/spawn``
-
-Permission: ``fancycore.commands.spawn``
+Teleports you to the server's spawn point.
+- **Permissions**: `fancycore.commands.spawn`
+- **Syntax**: `/spawn`
 
 ## Warps
 
 ### createwarp
 
-Description: Creates a warp point at your current location with the specified name.
-Syntax: ``/createwarp <name>``
-- `<name>` - Warp name
-
-Permission: ``fancycore.commands.createwarp``
+Creates a warp point at your current location with the specified name.
+- **Permissions**: `fancycore.commands.createwarp`
+- **Syntax**: `/createwarp <name>`
+  - `<name>` - Warp name
 
 ### deletewarp
 
-Description: Deletes the warp point with the specified name.
-Syntax: ``/deletewarp <name>``
-- `<name>` - Warp name
-
-Permission: ``fancycore.commands.deletewarp``
+Deletes the warp point with the specified name.
+- **Permissions**: `fancycore.commands.deletewarp`
+- **Syntax**: `/deletewarp <name>`
+  - `<name>` - Warp name
 
 ### warp
 
-Description: Teleports you to the warp point with the specified name.
-Syntax: ``/warp <name>``
-- `<name>` - Warp name
-
-Permission: ``fancycore.commands.warp.(name)``
+Teleports you to the warp point with the specified name.
+- **Permissions**: `fancycore.commands.warp.(name)`
+- **Syntax**: `/warp <name>`
+  - `<name>` - Warp name
 
 ### listwarps
 
-Description: Lists all available warp points on the server.
-Syntax: ``/listwarps`` or ``/warps``
-
-Permission: ``fancycore.commands.listwarps``
+Lists all available warp points on the server.
+- **Permissions**: `fancycore.commands.listwarps`
+- **Syntax**: `/listwarps` or `/warps`
 
 ## Homes
 
 ### sethome
 
-Description: Sets your home point to your current location.
-Syntax: ``/sethome <name>``
-- `<name>` - Home name
-
-Permission: ``fancycore.commands.sethome``
+Sets your home point to your current location.
+- **Permissions**: `fancycore.commands.sethome`
+- **Syntax**: `/sethome <name>`
+  - `<name>` - Home name
 
 ### deletehome
 
-Description: Deletes your home point with the specified name.
-Syntax: ``/deletehome <name>``
-- `<name>` - Home name
-
-Permission: ``fancycore.commands.deletehome``
+Deletes your home point with the specified name.
+- **Permissions**: `fancycore.commands.deletehome`
+- **Syntax**: `/deletehome <name>`
+  - `<name>` - Home name
 
 ### home
 
-Description: Teleports you to your home point with the specified name or the first home if no name is provided.
-Syntax: ``/home [name]``
-- `[name]` - Home name (optional)
-
-Permission: ``fancycore.commands.home``
+Teleports you to your home point with the specified name or the first home if no name is provided.
+- **Permissions**: `fancycore.commands.home`
+- **Syntax**: `/home [name]`
+  - `[name]` - Home name (optional)

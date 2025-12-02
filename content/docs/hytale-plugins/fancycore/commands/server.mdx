@@ -14,68 +14,64 @@ description: Server options for FancyCore
 
 ### restart
 
-Description: Restarts the server after a specified delay.
-Syntax: ``/restart <delay>``
-- `<delay>` - Delay in seconds
-
-Permission: ``fancycore.commands.restart``
+Restarts the server after a specified delay.
+- **Permissions**: `fancycore.commands.restart`
+- **Syntax**: `/restart <delay>`
+  - `<delay>` - Delay in seconds
 
 ### stop
 
-Description: Stops the server after a specified delay.
-Syntax: ``/stop <delay>``
-- `<delay>` - Delay in seconds
-
-Permission: ``fancycore.commands.stop``
+Stops the server after a specified delay.
+- **Permissions**: `fancycore.commands.stop`
+- **Syntax**: `/stop <delay>`
+  - `<delay>` - Delay in seconds
 
 ### saveall
 
-Description: Forces the server to save all data immediately.
-Syntax: ``/saveall``
-
-Permission: ``fancycore.commands.saveall``
+Forces the server to save all data immediately.
+- **Permissions**: `fancycore.commands.saveall`
+- **Syntax**: `/saveall`
 
 ## Server health
 
 ### health
 
-Description: Displays server health information.
-Syntax: ``/health [metric]``
+Displays server health information.
+- **Permissions**: Various (see metrics below)
+- **Syntax**: `/health [metric]`
 
 **Metrics:**
-- ``/health`` - Overview of server health
-  - Permission: ``fancycore.commands.health``
+- `/health` - Overview of server health
+  - Permission: `fancycore.commands.health`
 
-- ``/health tps`` - Current ticks per second
-  - Permission: ``fancycore.commands.health.tps``
+- `/health tps` - Current ticks per second
+  - Permission: `fancycore.commands.health.tps`
 
-- ``/health memory`` - Current memory usage
-  - Permission: ``fancycore.commands.health.memory``
+- `/health memory` - Current memory usage
+  - Permission: `fancycore.commands.health.memory`
 
-- ``/health uptime`` - Server uptime since restart
-  - Permission: ``fancycore.commands.health.uptime``
+- `/health uptime` - Server uptime since restart
+  - Permission: `fancycore.commands.health.uptime`
 
-- ``/health cpu`` - Current CPU usage
-  - Permission: ``fancycore.commands.health.cpu``
+- `/health cpu` - Current CPU usage
+  - Permission: `fancycore.commands.health.cpu`
 
-- ``/health entities`` - Total loaded entities
-  - Permission: ``fancycore.commands.health.entities``
+- `/health entities` - Total loaded entities
+  - Permission: `fancycore.commands.health.entities`
 
-- ``/health players`` - Current player count
-  - Permission: ``fancycore.commands.health.players``
+- `/health players` - Current player count
+  - Permission: `fancycore.commands.health.players`
 
 ## Players
 
 ### onlineplayers
 
-Description: Lists all players currently online on the server.
-Syntax: ``/onlineplayers``
-
-Permission: ``fancycore.commands.onlineplayers``
+Lists all players currently online on the server.
+- **Permissions**: `fancycore.commands.onlineplayers`
+- **Syntax**: `/onlineplayers`
 
 ### registeredplayers
 
-Description: Lists all players registered on the server.
-Syntax: ``/registeredplayers``
-
-Permission: ``fancycore.commands.registeredplayers``
+Lists all players registered on the server.
+- **Permissions**: `fancycore.commands.registeredplayers`
+- **Syntax**: `/registeredplayers`

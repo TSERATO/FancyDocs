@@ -39,5 +39,5 @@ export interface MoveToParams {
    * @example true
    * @example false
    */
-  lookInMyDirection: boolean;
+  '--look-in-my-direction': boolean;
 }

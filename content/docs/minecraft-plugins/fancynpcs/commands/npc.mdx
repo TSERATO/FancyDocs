@@ -10,101 +10,97 @@ The `/npc` command is the main command for managing NPCs. It allows you to creat
 
 ### Help about commands
 
-Shows help about all commands.\
-Syntax: `/npc help [page]`\
-Permissions: `fancynpcs.command.npc.help`
+Shows help about all commands.
+- **Permissions**: `fancynpcs.command.npc.help`
+- **Syntax**: `/npc help [page]`
 
 ### Create a NPC
 
-Creates a new NPC. Can be customized with flags.\
-Syntax: `/npc create (name) [--position (x y z)] [--world (world)] [--type (type)]`\
-Permissions: `fancynpcs.command.npc.create`\
-Note: The name check is strict and only allows `A-Z a-z 0-9 _ - /` characters.
+Creates a new NPC. Can be customized with flags (*note: The name check is strict and only allows `A-Z a-z 0-9 _ - /` characters*).
+- **Permissions**: `fancynpcs.command.npc.create`
+- **Syntax**: `/npc create (name) [--position (x y z)] [--world (world)] [--type (type)]`
 
 <AutoTypeTable path="./params/npc/npc-create.ts" />
 
 ### Copy a NPC
 
-Copies (duplicates) the specified NPC.\
-Syntax: `/npc copy (npc) (new_name)`\
-Permissions: `fancynpcs.command.npc.copy`\
-Note: The name check is strict and only allows `A-Z a-z 0-9 _ - /` characters.
+Copies (duplicates) the specified NPC (*note: The name check is strict and only allows `A-Z a-z 0-9 _ - /` characters*).
+- **Permissions**: `fancynpcs.command.npc.copy`
+- **Syntax**: `/npc copy (npc) (new_name)`
 
 ### Remove a NPC
 
-Removes the specified NPC.\
-Syntax: `/npc remove (npc)`\
-Permissions: `fancynpcs.command.npc.remove`
+Removes the specified NPC.
+- **Permissions**: `fancynpcs.command.npc.remove`
+- **Syntax**: `/npc remove (npc)`
 
 ### List all NPCs
 
-Lists all NPCs in all worlds. Can be filtered and sorted.\
-Syntax: `/npc list [--type (type)] [--sort (sort)]`\
-Permissions: `fancynpcs.command.npc.list`
+Lists all NPCs in all worlds. Can be filtered and sorted.
+- **Permissions**: `fancynpcs.command.npc.list`
+- **Syntax**: `/npc list [--type (type)] [--sort (sort)]`
 
 ### Get NPC information
 
-Shows information about the specified NPC.\
-Syntax: `/npc info (npc)`\
-Permissions: `fancynpcs.command.npc.info`
+Shows information about the specified NPC.
+- **Permissions**: `fancynpcs.command.npc.info`
+- **Syntax**: `/npc info (npc)`
 
 ## Customize NPCs
 
 ### Set type
 
-Changes the type of the NPC.\
-Syntax: `/npc type (npc) (type)`\
-Permissions: `fancynpcs.command.npc.type`
+Changes the type of the NPC.
+- **Permissions**: `fancynpcs.command.npc.type`
+- **Syntax**: `/npc type (npc) (type)`
 
 ### Set display name
 
-Changes the displayname of the NPC. Supports MiniMessage, PlaceholderAPI and MiniPlaceholders.\
-Syntax: `/npc displayname (npc) (@none | name)`\
-Permissions: `fancynpcs.command.npc.displayname`\
-Note: Empty message placeholder is `@none`
+Changes the displayname of the NPC. Supports MiniMessage, PlaceholderAPI and MiniPlaceholders (*note: Empty message placeholder is `@none`*).
+- **Permissions**: `fancynpcs.command.npc.displayname`
+- **Syntax**: `/npc displayname (npc) (@none | name)`
 
 ### Set skin
 
-Changes skin of the NPC.\
-Syntax: `/npc skin (npc) (@none | @mirror | name | url | file name) [--slim]`\
-Permissions: `fancynpcs.command.npc.skin`
+Changes skin of the NPC.
+- **Permissions**: `fancynpcs.command.npc.skin`
+- **Syntax**: `/npc skin (npc) (@none | @mirror | name | url | file name) [--slim]`
 
 <AutoTypeTable path="./params/npc/npc-skin.ts" />
 
 ### Set equipment
 
-Sets equipment slot of the NPC to item currently held in main hand, none or a specific item type.\
-Syntax: `/npc equipment (npc) (set | clear | list)`\
-Permissions: `fancynpcs.command.npc.equipment.(sub)`
+Sets equipment slot of the NPC to item currently held in main hand, none or a specific item type.
+- **Permissions**: `fancynpcs.command.npc.equipment.(sub)`
+- **Syntax**: `/npc equipment (npc) (set | clear | list)`
 
 <AutoTypeTable path="./params/npc/npc-equipment.ts" />
 
 ### Toggle glowing
 
-Changes glowing state and color of the NPC.\
-Syntax: `/npc glowing (npc) [disabled | color]`\
-Permissions: `fancynpcs.command.npc.glowing`
+Changes glowing state and color of the NPC.
+- **Permissions**: `fancynpcs.command.npc.glowing`
+- **Syntax**: `/npc glowing (npc) [disabled | color]`
 
 <AutoTypeTable path="./params/npc/npc-glowing.ts" />
 
 ### Show NPC in the tab-list
 
-Changes whether the NPC is shown in the player-list. This works only on NPCs of PLAYER type.\
-Syntax: `/npc show_in_tab (npc) [state]`\
-Permissions: `fancynpcs.command.npc.show_in_tab`\
-Note: Re-connecting to the server might be required for changes to take effect.
+Changes whether the NPC is shown in the player-list. This works only on NPCs of PLAYER type (*note: Re-connecting to the server might be required for changes to take effect*).
+- **Permissions**: `fancynpcs.command.npc.show_in_tab`
+- **Syntax**: `/npc show_in_tab (npc) [state]`
 
 ### Toggle collidable
 
-Changes whether the NPC can collide with other entities.\
-Syntax: `/npc collidable (npc) [state]`\
-Permissions: `fancynpcs.command.npc.collidable`
+Changes whether the NPC can collide with other entities.
+- **Permissions**: `fancynpcs.command.npc.collidable`
+- **Syntax**: `/npc collidable (npc) [state]`
 
 ### Edit size
 
-Changes the scale of the size of the NPC.\
-Syntax: `/npc scale (npc) (factor)`\
-Permissions: `fancynpcs.command.npc.scale`
+Changes the scale of the size of the NPC.
+- **Permissions**: `fancynpcs.command.npc.scale`
+- **Syntax**: `/npc scale (npc) (factor)`
 
 <Callout type="warn">
     Only available for 1.20.5 or newer.
@@ -112,9 +108,9 @@ Permissions: `fancynpcs.command.npc.scale`
 
 ### Set attributes
 
-Sets an attribute of the NPC.\
-Syntax: `/npc attribute (npc) (set | list)`\
-Permissions: `fancynpcs.command.npc.attribute.(sub)`
+Sets an attribute of the NPC.
+- **Permissions**: `fancynpcs.command.npc.attribute.(sub)`
+- **Syntax**: `/npc attribute (npc) (set | list)`
 
 <AutoTypeTable path="./params/npc/npc-attribute.ts" />
 
@@ -122,55 +118,55 @@ Permissions: `fancynpcs.command.npc.attribute.(sub)`
 
 ### Turn NPC to player
 
-Changes whether the NPC should turn to the player when in a certain range.\
-Syntax: `/npc turn_to_player (npc) [state]`\
-Permissions: `fancynpcs.command.npc.turn_to_player`
+Changes whether the NPC should turn to the player when in a certain range.
+- **Permissions**: `fancynpcs.command.npc.turn_to_player`
+- **Syntax**: `/npc turn_to_player (npc) [state]`
 
 ### Distance when NPC starts turning
 
-Changes the distance at which the NPC should turn to the player.\
-Syntax: `/npc turn_to_player_distance (npc) [distance]`\
-Permissions: `fancynpcs.command.npc.turn_to_player_distance`
+Changes the distance at which the NPC should turn to the player.
+- **Permissions**: `fancynpcs.command.npc.turn_to_player_distance`
+- **Syntax**: `/npc turn_to_player_distance (npc) [distance]`
 
 ### Move NPC to your location
 
-Teleports the specified NPC to your location.\
-Syntax: `/npc move_here (npc)`\
-Permissions: `fancynpcs.command.npc.move_to`
+Teleports the specified NPC to your location.
+- **Permissions**: `fancynpcs.command.npc.move_to`
+- **Syntax**: `/npc move_here (npc)`
 
 ### Move NPC to a location
 
-Teleports NPC to the specified location.\
-Syntax: `/npc move_to (npc) (x) (y) (z) [world] [--look-in-my-direction]`\
-Permissions: `fancynpcs.command.npc.move_to`
+Teleports NPC to the specified location.
+- **Permissions**: `fancynpcs.command.npc.move_to`
+- **Syntax**: `/npc move_to (npc) (x) (y) (z) [world] [--look-in-my-direction]`
 
 <AutoTypeTable path="./params/npc/npc-moveTo.ts" />
 
 ### Rotate NPC
 
-Sets the yaw and pitch of the specified NPC.\
-Syntax: `/npc rotate (npc) (yaw) (pitch)`\
-Permissions: `fancynpcs.command.npc.rotate`
+Sets the yaw and pitch of the specified NPC.
+- **Permissions**: `fancynpcs.command.npc.rotate`
+- **Syntax**: `/npc rotate (npc) (yaw) (pitch)`
 
 <AutoTypeTable path="./params/npc/npc-rotate.ts" />
 
 ### Center NPC
 
-Centers the NPC at the location, which it's standing at.\
-Syntax: `/npc center (npc)`\
-Permissions: `fancynpcs.command.npc.center`
+Centers the NPC at the location, which it's standing at.
+- **Permissions**: `fancynpcs.command.npc.center`
+- **Syntax**: `/npc center (npc)`
 
 ### Show nearby NPCs
 
-Lists all NPCs in your world. Can be filtered and sorted.\
-Syntax: `/npc nearby [--radius (radius)] [--type (type)] [--sort (sort)]`\
-Permissions: `fancynpcs.command.npc.nearby`
+Lists all NPCs in your world. Can be filtered and sorted.
+- **Permissions**: `fancynpcs.command.npc.nearby`
+- **Syntax**: `/npc nearby [--radius (radius)] [--type (type)] [--sort (sort)]`
 
 ### Teleport to NPC
 
-Teleports you to the specified NPC.\
-Syntax: `/npc teleport (npc)`\
-Permissions: `fancynpcs.command.npc.teleport`
+Teleports you to the specified NPC.
+- **Permissions**: `fancynpcs.command.npc.teleport`
+- **Syntax**: `/npc teleport (npc)`
 
 <Callout type="warn">
     `/npc teleport` -> Teleport YOU to the NPC\
@@ -185,73 +181,64 @@ Permissions: `fancynpcs.command.npc.teleport`
 
 ### Add action
 
-Adds an action to the specified NPC's trigger.\
-Syntax: `/npc action (npc) (trigger) add (actionType) [value]`\
-Permissions:
-- `fancynpcs.command.npc.action.add`
-- `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+Adds an action to the specified NPC's trigger.
+- **Permissions**: `fancynpcs.command.npc.action.add` and `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+- **Syntax**: `/npc action (npc) (trigger) add (actiontype) [value]`
 
 <AutoTypeTable path="./params/npc/npc-action.ts" />
 
 ### Add action before
 
-Adds an action before the specified index in the NPC's action list for the given trigger.\
-Syntax: `/npc action (npc) (trigger) add_before (index) (actionType) [value]`\
-Permissions:
-- `fancynpcs.command.npc.action.addBefore`
-- `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+Adds an action before the specified index in the NPC's action list for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.addBefore` and `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+- **Syntax**: `/npc action (npc) (trigger) add_before (index) (actiontype) [value]`
 
 ### Add action after
 
-Adds an action after the specified index in the NPC's action list for the given trigger.\
-Syntax: `/npc action (npc) (trigger) add_after (index) (actionType) [value]`\
-Permissions:
-- `fancynpcs.command.npc.action.addAfter`
-- `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+Adds an action after the specified index in the NPC's action list for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.addAfter` and `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+- **Syntax**: `/npc action (npc) (trigger) add_after (index) (actiontype) [value]`
 
 ### Set action
 
-Sets an action at the specified number in the NPC's action list for the given trigger.\
-Syntax: `/npc action (npc) (trigger) set (number) (actionType) [value]`\
-Permissions:
-- `fancynpcs.command.npc.action.set`
-- `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+Sets an action at the specified number in the NPC's action list for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.set` and `fancynpcs.command.npc.action.add.(actionType | *)` for the specific action type
+- **Syntax**: `/npc action (npc) (trigger) set (number) (actiontype) [value]`
 
 ### Remove action
 
-Removes an action from the NPC's action list based on the specified number for the given trigger.\
-Syntax: `/npc action (npc) (trigger) remove (number)`\
-Permissions: `fancynpcs.command.npc.action.remove`
+Removes an action from the NPC's action list based on the specified number for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.remove`
+- **Syntax**: `/npc action (npc) (trigger) remove (number)`
 
 ### Move action up
 
-Moves the action at the specified number up in the NPC's action list for the given trigger.\
-Syntax: `/npc action (npc) (trigger) move_up (number)`\
-Permissions: `fancynpcs.command.npc.action.moveUp`
+Moves the action at the specified number up in the NPC's action list for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.moveUp`
+- **Syntax**: `/npc action (npc) (trigger) move_up (number)`
 
 ### Move action down
 
-Moves the action at the specified number down in the NPC's action list for the given trigger.\
-Syntax: `/npc action (npc) (trigger) move_down (number)`\
-Permissions: `fancynpcs.command.npc.action.moveDown`
+Moves the action at the specified number down in the NPC's action list for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.moveDown`
+- **Syntax**: `/npc action (npc) (trigger) move_down (number)`
 
 ### Clear actions
 
-Clears all actions from the NPC for the given trigger.\
-Syntax: `/npc action (npc) (trigger) clear`\
-Permissions: `fancynpcs.command.npc.action.clear`
+Clears all actions from the NPC for the given trigger.
+- **Permissions**: `fancynpcs.command.npc.action.clear`
+- **Syntax**: `/npc action (npc) (trigger) clear`
 
 ### List actions
 
-Lists all actions for the specified NPC and trigger.\
-Syntax: `/npc action (npc) (trigger) list`\
-Permissions: `fancynpcs.command.npc.action.list`
+Lists all actions for the specified NPC and trigger.
+- **Permissions**: `fancynpcs.command.npc.action.list`
+- **Syntax**: `/npc action (npc) (trigger) list`
 
 ### Interaction cooldown
 
-Changes duration between interactions (cooldown) of the NPC.\
-Syntax: `/npc interaction_cooldown (npc) (disabled | cooldown)`\
-Permissions: `fancynpcs.command.npc.interaction_cooldown`\
-Note: Formerly known as `/npc interactionCooldown`.
+Changes duration between interactions (cooldown) of the NPC (*note: Formerly known as `/npc interactionCooldown`*).
+- **Permissions**: `fancynpcs.command.npc.interaction_cooldown`
+- **Syntax**: `/npc interaction_cooldown (npc) (disabled | cooldown)`
 
 <AutoTypeTable path="./params/npc/npc-interactionCooldown.ts" />
